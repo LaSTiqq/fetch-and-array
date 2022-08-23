@@ -1,11 +1,13 @@
 import axios from "axios";
 
-const response = async () => {
+const sortById = async () => {
   const { data } = await axios.get("https://dummyjson.com/comments");
-  const newData = data.comments.map((user) => {
-    return user.user;
-  });
-  console.log("🚀 ~ newData", newData);
+  const newData = data.comments
+    .map((comment) => {
+      return comment.user;
+    })
+    .sort((user, another) => user.id - another.id);
+  return newData;
 };
 
-response();
+console.log("🚀 ~ sortById", await sortById());
