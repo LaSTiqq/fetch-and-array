@@ -2,7 +2,7 @@
 
 Participants:
 
-Lauris Stirna
-Daina Bogdanova
-Kirils Lusnickis
+Lauris Stirna, 
+Daina Bogdanova, 
+Kirils Lusnickis, 
 Inese Lapiņa
