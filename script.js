@@ -10,4 +10,13 @@ const sortById = async () => {
   return newData;
 };
 
+const filterByContent = async (substring) => {
+  const { data } = await axios.get("https://dummyjson.com/comments");
+  const newData = data.comments.filter((comment) =>
+    comment.body.includes(substring)
+  );
+  return newData;
+};
+
 console.log("🚀 ~ sortById", await sortById());
+console.log("🚀 ~ filterByContent", await filterByContent("You"));
