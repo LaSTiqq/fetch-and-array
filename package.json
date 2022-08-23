@@ -1,0 +1,24 @@
+{
+  "name": "fetch-and-array",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaSTiqq/fetch-and-array.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaSTiqq/fetch-and-array/issues"
+  },
+  "homepage": "https://github.com/LaSTiqq/fetch-and-array#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
