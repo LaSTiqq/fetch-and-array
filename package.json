@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/LaSTiqq/fetch-and-array#readme",
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^0.27.2",
+    "node-fetch": "^3.2.10"
   }
 }
