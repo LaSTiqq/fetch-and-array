@@ -2,20 +2,21 @@ import axios from "axios";
 
 const sortById = async () => {
   const { data } = await axios.get("https://dummyjson.com/comments");
-  const newData = data.comments
+  const sortData = data.comments
     .map((comment) => {
       return comment.user;
     })
     .sort((user, another) => user.id - another.id);
-  return newData;
+  return sortData;
 };
 
 const filterByContent = async (substring) => {
   const { data } = await axios.get("https://dummyjson.com/comments");
-  const newData = data.comments.filter((comment) =>
+  const filterData = data.comments.filter((comment) =>
     comment.body.includes(substring)
   );
-  return newData;
+  filterData.sort((user, another) => user.postId - another.postId);
+  return filterData;
 };
 
 console.log("🚀 ~ sortById", await sortById());
